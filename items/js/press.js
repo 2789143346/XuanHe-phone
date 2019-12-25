@@ -4,6 +4,7 @@ $(function(){
 		url: "../data/news.json",
 		async: true,
 		success: function(data) {
+			console.log(data)
 			data.CooperativPartner.forEach(function(item,index){
 				// console.log(item)
 				$('<li class="list-uLi" index='+index+' data="true">'+

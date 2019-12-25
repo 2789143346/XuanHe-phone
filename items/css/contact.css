@@ -10,7 +10,7 @@ width:0;
 	width: 100%;
 	min-width: 1183px;
 	height: 94px;
-	background: url(../images/mao/5logo.jpg);
+	background: url(../images/5logo.jpg);
 	background-size: 100% 94px;
 	color: white;
 	display: flex;
@@ -37,7 +37,7 @@ width:0;
 	width: 100%;
 	min-width: 1183px;
 	height: 113px;
-	background: url(../images/mao/SINCE.png) no-repeat center center;
+	background: url(../images/SINCE.png) no-repeat center center;
 	background-size:373px 113px;
 	margin-top: 45px;
 }

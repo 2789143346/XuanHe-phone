@@ -59,7 +59,7 @@
 	text-align: center;
 	margin: 0 auto;
 	font-family: MicrosoftYaHeiLight;
-	background: url(../images/mao/SINCE.png) no-repeat ;
+	background: url(../images/SINCE.png) no-repeat ;
 	background-size: cover;
 }
 .page-detail{
@@ -96,7 +96,7 @@
 	width: 100%;
 	min-width: 1183px;
 	height: 94px;
-	background: url(../images/gen/03/guanyu-1.jpg);
+	background: url(../images/guanyu-1.jpg);
 	background-size: 1920px 94px;
 	color: white;
 	display: flex;
