@@ -1,0 +1,277 @@
+.page-body{
+	width:100%;
+	font-size:16px;
+}
+.carte-right{
+	display: block;
+	width:0;
+	height:0;
+	border-top:5px solid transparent;
+	
+	border-bottom:5px solid transparent;
+	
+	border-left:6px solid #7c4e23;;
+}
+
+
+
+
+.pageyTypearea{
+	width: 1040px;
+	margin: 0 auto;
+	min-width: 1000px;
+	overflow: hidden;
+}
+
+.page-banner{
+	width: 100%;
+	min-width: 1183px;
+	height: 94px;
+	overflow: hidden;
+	position: relative;
+}
+.banner-img>li img{
+	display: block;
+	height: 100%;
+	width: 1920px;
+	min-width: 1183px;
+}
+.banner-img>li{
+	width: 100%;
+	position: absolute;
+	top:0;
+	left: 0;
+	display: none;
+	height: 100%;
+}
+.banner-img>li.active{
+	display: block;
+	min-width: 1183px;
+}
+.banner-title{
+	text-align: center;
+	position: absolute;
+	top:50%;
+	left:50%;
+	transform: translate(-50%,-50%);
+	color:#fffefe;
+}
+.banner-title h1{
+	margin-bottom: 9px;
+	font-size: 18px;
+}
+.banner-title p{
+	font-size: 16px;
+}
+
+
+
+.product-btnList>ul{
+	display: flex;
+	display: -ms-flexbox;
+	width: 608px;
+	height: 48px;
+	justify-content: space-between;
+	margin: 0 auto;
+}
+.product-btnList{
+	margin-top:30px;
+	margin-bottom: 30px;
+}
+.product-btnList>ul>li{
+	display: inline-block;
+	width: 112px;
+	height: 48px;
+	border-radius: 16px;
+	text-align: center;
+	line-height: 48px;
+	margin:0 auto;
+	
+}
+/* 产品导航 */
+.product-btnList>ul>li span{
+		
+		font-size: 16px;
+		font-stretch: normal;
+		color: #999999;
+}
+.product-btnList>ul>li.active{
+	background-color: #7c4e23;
+}
+.product-btnList>ul>li.active span{
+	color: #ffffff;
+	font-weight: bold;
+}
+
+
+/* 产品列表 */
+.product-list{
+	display: flex;
+	position: relative;
+	height: 360px;
+}
+.product-list>ul{
+	display: flex;
+	height: 360px;
+	position: absolute;
+	left: 0;
+	top:0;
+}
+
+.product-item{
+	width: 250px;
+	height: 360px;
+	font-size: 16px;
+	color: #666666;
+	display: inline-block;
+	margin-left: 13px;
+}
+.product-item:nth-child(1){
+	margin: 0;
+}
+.product-item figure{
+	background:#E7E7E7 ;
+}
+.product-item figure {
+	width: 100%;
+	height:215px;
+	overflow:hidden;
+	
+}
+.product-item figure img{
+	display: block;
+	width: 100%;
+	height: 100%;
+	transition:1s;
+	-ms-transition:1s;
+}
+
+.product-detail{
+	height:145px;
+	padding:10px 10px;
+	box-sizing:border-box;
+	background:#fff;
+}
+.product-detail>h3{
+	margin:10px 0;
+	font-weight: bold;
+	color: #444444;
+	height:15px;
+}
+.product-type{
+	position:relative;
+	margin-bottom:15px;
+	font-size:10px;
+}
+.product-type:after {
+	content:"";
+	display:block;
+	width:22px;
+	transition:1s;
+	-ms-transition:1s;
+	border: 1px solid  #7c4e23;
+	position:absolute;
+	bottom:-7px;
+	background: #7c4e23;
+}
+.product-detail-text{
+	margin:10px 0;
+	line-height: 16px;
+	font-size:10px;
+}
+.product-detail-text a{
+	color: #666666;
+}
+
+
+.go-product a{
+	color: #7c4e23;
+	/* margin-right: 3px; */
+}
+.go-product{
+	display:flex;
+	align-items: center;
+	justify-content: space-around;
+	padding: 2px 2px;
+	border-radius: 16px;
+	margin-left:160px ;
+	margin-right:10px;
+	border: 1px solid  #7c4e23;
+	font-size:12px;
+	
+}
+.go-product:hover{
+	background: #7c4e23 ;
+}
+.go-product:hover a{
+	color:#fff;
+}
+.go-product:hover .carte-right{
+	border-left-color:#fff ;
+}
+
+.product-item:hover .product-type:after {
+	width:64px;
+	
+}
+.product-item:hover figure img{
+	transform:scale(1.5);
+}
+.product-page{
+	display:flex;
+	justify-content:center;
+	height: 48px;
+	line-height: 48px;
+	text-align:center;
+	margin:64px auto 48px;
+	color: #1a1e2a;
+	
+}
+.product-page a{
+	color: #1a1e2a;
+	display: inline-block;
+}
+.product-page>ul{
+	display:flex;
+	padding:0 9px;
+	box-sizing:border-box;
+	display: inline-block;
+}
+.product-page>ul>li{
+	padding:0 9px;
+	box-sizing:border-box;
+	display: inline-block;
+}
+.page-btn{
+	display:block;
+	width:48px;
+	height:48px;
+	border:1px solid #1a1e2a;
+}
+.M-cont-header{
+	width: 100%;
+	min-width: 1183px;
+	height: 94px;
+	background: url(../images/gen/01/1.jpg);
+	background-size: 1920px 94px;
+	color: white;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.M-cont-header div{
+	display: block;
+	width: 100%;
+	height: 30px;
+	text-align: center;
+	margin: 0;
+	letter-spacing: 4px;
+}
+.M-cont-header div:nth-child(1){
+	font-size: 18px;
+	margin-top: 30px;
+}
+.M-cont-header div:nth-child(2){
+	font-size: 16px;
+	margin-top: -6px;
+}

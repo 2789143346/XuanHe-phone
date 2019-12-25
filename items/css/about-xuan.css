@@ -1,0 +1,121 @@
+.page-banner{
+	width: 100%;
+	min-width: 1183px;
+	height: 94px;
+	overflow: hidden;
+	position: relative;
+	margin-bottom: 46px;
+}
+.banner-img{
+	width: 100%;
+	height: 94px;
+}
+.banner-img>li img{
+	display: block;
+	width: 1920px;
+	height: 94px;
+}
+.pageyTypearea{
+	width: 86%;
+	min-width: 1183px;
+	margin: 0 auto;
+}
+.banner-img>li{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top:0;
+	left: 0;
+	display: none;
+}
+.banner-img>li.active{
+	display: block;
+}
+.banner-title{
+	text-align: center;
+	position: absolute;
+	top:50%;
+	left:50%;
+	transform: translate(-50%,-50%);
+	color:#fffefe;
+	/* font-family: MicrosoftYaHeiLight; */
+	/* font-size: 2vw; */
+	letter-spacing: 5px;
+}
+.banner-title p:nth-child(1){
+	font-size: 18px;
+}
+.banner-title p:nth-child(2){
+	margin-top: 10px;
+	font-size: 16px;
+}
+.page-title{
+	width: 376px;
+	height: 107px;
+	line-height: 107px;
+	font-size: 27px;
+	font-weight: bold;
+	color: #7c4e23;
+	text-align: center;
+	margin: 0 auto;
+	font-family: MicrosoftYaHeiLight;
+	background: url(../images/mao/SINCE.png) no-repeat ;
+	background-size: cover;
+}
+.page-detail{
+	margin-top: 22px;
+}
+.page-detail-text{
+	/* margin-left: 83px; */
+	/* padding: 0 32px; */
+}
+.page-detail-text>li{
+	width: 1034px;
+	font-size: 14px;
+	text-indent: 2em;
+	margin-bottom: 32px;
+	color: #666666;
+	line-height: 28px;
+	margin: 0 auto;
+}
+
+.page-detail-img{
+	/* width: 100%; */
+	/* margin-left: 83px; */
+	width: 1034px;
+	height: 354px;
+	margin-bottom: 53px;
+	margin: 0 auto;
+}
+.page-detail-img img{
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+.M-cont-header{
+	width: 100%;
+	min-width: 1183px;
+	height: 94px;
+	background: url(../images/gen/03/guanyu-1.jpg);
+	background-size: 1920px 94px;
+	color: white;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.M-cont-header div{
+	display: block;
+	width: 100%;
+	height: 30px;
+	text-align: center;
+	margin: 0;
+	letter-spacing: 4px;
+}
+.M-cont-header div:nth-child(1){
+	font-size: 18px;
+	margin-top: 30px;
+}
+.M-cont-header div:nth-child(2){
+	font-size: 16px;
+	margin-top: -6px;
+}
