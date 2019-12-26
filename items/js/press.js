@@ -17,7 +17,7 @@ $(function(){
 							'<p class="text" title='+item.text+'>'+item.text+'</p>'+
 						'</div>'+
 						'<div class="floor-ul-btn" data-id='+item.id+'>'+
-							'<a href="details.html" class="floor-xbox-btn" data-id="${item.id}">MORE<span class="carte-right"></span></a>'+
+							'<a class="floor-xbox-btn" data-id="${item.id}">MORE<span class="carte-right"></span></a>'+
 						'</div>'+
 					'</div>'+
 				'</li>').appendTo('.M-List')
@@ -50,8 +50,15 @@ $(function(){
 					$(this).addClass('texter')
 				}
 			})
-			
 		}
 	})
+	if(screen.width<768){
+		$(document).on('touchstart','.floor-ul-btn a',function(e){
+			window.location.href = "../pages/details.html";
+		})
+	}else{
+		$(document).on('click','.floor-ul-btn a',function(e){
+			window.location.href = "../pages/details.html";
+		})
+	}
 })
-	

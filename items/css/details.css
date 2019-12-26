@@ -30,7 +30,7 @@ body{
 	margin-top: 26px;
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
+	/* justify-content: center; */
 }
 .M-box-out p:nth-child(1){
 	color: #7C4E23;
@@ -62,7 +62,6 @@ body{
 .M-text-details p{
 	color: #999999;
 	font-size: 16px;
-	
 	line-height:28px;
 }
 .M-details-img1{
@@ -73,4 +72,48 @@ body{
 	width: 100%;
 	margin-top: 48px;
 }
- 
+@media screen and (max-width: 1200px) {
+   .M-sex-diu{
+   	width: 650px;
+   	/*border: 1px solid #ccc;*/
+   	margin: 0 auto;
+   }
+   .M-br{
+   	width:650px;
+   	height: 2px;
+   	background: #999999;
+   	margin-top: 46px;
+   }
+}
+ @media screen and (max-width:768px) {
+	.M-sex-box{
+		margin-top: 80px;
+	}
+ 	.M-sex-diu{
+ 		width: 90%;
+ 		/*border: 1px solid #ccc;*/
+ 		margin: 0 auto;
+ 	}
+ 	.M-box-shou{
+ 		margin-top: 20px;
+ 	}
+	.M-box-out{
+		margin-bottom: 26px;
+	}
+	.M-box-woe{
+		width: 100%;
+		margin: 0 auto;
+	}
+ 	.M-br{
+ 		width: 100%;
+ 		height: 2px;
+		margin: 0 auto;
+ 		background: #999999;
+ 		margin-top: 35px;
+ 	}
+	.M-text-details{
+	margin-top: 35px;
+	padding:0 28px 0 28px;
+	box-sizing: border-box;
+}
+ }

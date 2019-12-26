@@ -17,6 +17,8 @@ time, mark, audio, video {
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
+	outline: none !important;
+	-webkit-tap-highlight-color: transparent !important;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 

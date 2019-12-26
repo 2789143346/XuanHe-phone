@@ -1,6 +1,6 @@
 .page-banner{
 	width: 100%;
-	min-width: 1183px;
+	/* min-width: 1183px; */
 	height: 94px;
 	overflow: hidden;
 	position: relative;
@@ -16,8 +16,8 @@
 	height: 94px;
 }
 .pageyTypearea{
-	width: 86%;
-	min-width: 1183px;
+	width: 90%;
+	/* min-width: 1183px; */
 	margin: 0 auto;
 }
 .banner-img>li{
@@ -54,7 +54,7 @@
 	height: 107px;
 	line-height: 107px;
 	font-size: 27px;
-	font-weight: bold;
+	/* font-weight: bold; */
 	color: #7c4e23;
 	text-align: center;
 	margin: 0 auto;
@@ -83,18 +83,18 @@
 	/* width: 100%; */
 	/* margin-left: 83px; */
 	width: 1034px;
-	height: 354px;
+	/* height: 354px; */
 	margin-bottom: 53px;
 	margin: 0 auto;
 }
 .page-detail-img img{
 	display: block;
 	width: 100%;
-	height: 100%;
+	/* height: 100%; */
 }
 .M-cont-header{
 	width: 100%;
-	min-width: 1183px;
+	/* min-width: 1183px; */
 	height: 94px;
 	background: url(../images/guanyu-1.jpg);
 	background-size: 1920px 94px;
@@ -118,4 +118,81 @@
 .M-cont-header div:nth-child(2){
 	font-size: 16px;
 	margin-top: -6px;
+}
+.page-body{
+	margin-top: 0px;
+}
+@media screen and (max-width:1200px) {
+	.page-title{
+		width: 376px;
+		height: 107px;
+		line-height: 107px;
+		font-size: 24px;
+		/* font-weight: bold; */
+		color: #7c4e23;
+		text-align: center;
+		margin: 0 auto;
+		font-family: MicrosoftYaHeiLight;
+		background: url(../images/SINCE.png) no-repeat ;
+		background-size: cover;
+	}
+	.page-detail-text>li{
+		width: 650px;
+		font-size: 12px;
+		text-indent: 2em;
+		margin-bottom: 32px;
+		color: #666666;
+		line-height: 28px;
+		margin: 0 auto;
+	}
+	.page-detail-img{
+		/* width: 100%; */
+		/* margin-left: 83px; */
+		width: 650px;
+		/* height: 354px; */
+		margin-bottom: 53px;
+		margin: 0 auto;
+	}
+}
+@media screen and (max-width:768px) {
+	.zc-box-top{
+		z-index: 10000;
+	}
+	.page-title{
+		width: 100%;
+		height: 107px;
+		line-height: 107px;
+		font-size: 22px;
+		/* font-weight: bold; */
+		color: #7c4e23;
+		text-align: center;
+		margin: 0 auto;
+		font-family: MicrosoftYaHeiLight;
+		background: url(../images/SINCE.png) no-repeat ;
+		background-size: cover;
+	}
+	.page-detail-text>li{
+		width: 100%;
+		font-size: 12px;
+		text-indent: 2em;
+		margin-bottom: 32px;
+		color: #666666;
+		line-height: 28px;
+		margin: 0 auto;
+		letter-spacing: 1px;
+	}
+	.page-detail-img{
+		/* width: 100%; */
+		/* margin-left: 83px; */
+		width: 100%;
+		/* height: 354px; */
+		margin-bottom: 53px;
+		margin: 0 auto;
+	}
+	.page-body{
+		margin-top: 50px;
+	}
+	.page-detail{
+		margin-top: 0px;
+	}
 }

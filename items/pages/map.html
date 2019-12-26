@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="../css/reset.css"/>
+	<link rel="stylesheet" type="text/css" href="../css/map.css"/>
+	<script src="../js/jquery-3.3.1.min.js" type="text/javascript" charset="utf-8"></script>
+</head>
+<body>
+	<a href="./contact.html" class="backoff"><</a>
+	<div id="allMap"></div>
+</body>
+<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=Tsysj1oxCFHwq527G3H58C7gydhFeLhU"></script>
+ 
+ <script type="text/javascript">
+
+	// 百度地图API功能
+	var map = new BMap.Map("allMap");
+	var point = new BMap.Point(116.370125,39.764925);
+	var marker = new BMap.Marker(point);  // 创建标注
+	map.addOverlay(marker);              // 将标注添加到地图中
+	map.centerAndZoom(point, 15);
+	var opts = {
+	  width : 600,     // 信息窗口宽度
+	  height: 140,     // 信息窗口高度
+	  color:"#fff",
+	  enableMessage:true,//设置允许信息窗发送短息
+	  message:""
+	}
+	var infoWindow = new BMap.InfoWindow("", opts);  // 创建信息窗口对象 
+	marker.addEventListener("click", function(){          
+		map.openInfoWindow(infoWindow,point); //开启信息窗口
+	});
+	 map.enableScrollWheelZoom(true); 
+
+</script>
+</html>

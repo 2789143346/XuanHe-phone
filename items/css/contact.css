@@ -2,16 +2,16 @@
 width:0;
 } */
 #M-cont-box{
-	width: 100%;
-	min-width: 1183px;
-	background: #fff;
-}
+		width: 100%;
+		/* min-width: 1183px; */
+		background: #fff;
+	}
 .M-cont-header{
 	width: 100%;
-	min-width: 1183px;
+	/* min-width: 1183px; */
 	height: 94px;
 	background: url(../images/5logo.jpg);
-	background-size: 100% 94px;
+	background-size: 1920px 94px;
 	color: white;
 	display: flex;
 	flex-wrap: wrap;
@@ -35,7 +35,7 @@ width:0;
 }
 .M-cont-text{
 	width: 100%;
-	min-width: 1183px;
+	/* min-width: 1183px; */
 	height: 113px;
 	background: url(../images/SINCE.png) no-repeat center center;
 	background-size:373px 113px;
@@ -45,7 +45,7 @@ width:0;
 	text-align: center;
 }
 .M-cont-text p:nth-child(1){
-	font-size: 27px;
+	font-size: 24px;
 	color: #7C4E23;
 	padding-top: 37px;
 }
@@ -67,7 +67,6 @@ width:0;
 }
 .M-cont-Ul li{
 	width: 33%;
-	
 	justify-content: center;
 	/* border-right: 2px solid rgb(212,197,183); */
 	position: relative;
@@ -121,12 +120,8 @@ width:0;
 	height: 42px; 
 	margin: 0 auto;
 }	
-.M-cont-Ul li p{
-	display: block;
-	text-align: center;
-}
-.M-cont-Ul li p{
-	display: block;
+.phone,.contact,.email{
+	/* display: block; */
 	text-align: center;
 	font-size: 23px;
 	line-height: 64px;
@@ -136,8 +131,87 @@ width:0;
 	text-align: center;
 	font-size: 16px;
 }
+.address{
+	display: none;
+}
 #allMap{
 		width:100%;
 		height:70vh;
 		margin:0 auto;
 	}
+/* @media screen and (min-width: 1200px) {
+	.M-cont-header{
+		background-size: 1920px 94px;
+	}
+} */
+
+@media screen and (max-width: 1200px) {
+   #M-cont-box{
+   	width: 100%;
+   	background: #fff;
+   }
+   .M-cont-header{
+   	background-size: 1920px 94px;
+   }
+}
+@media screen and (max-width: 768px) {
+   #M-cont-box{
+	margin-top: 50px;
+   	width: 100%;
+   	background: #fff;
+   }
+   .M-cont-header{
+   	/* display: none; */
+	background: url(../images/5logo.jpg);
+	background-size: 1920px 94px;
+   }
+   .M-cont-text{
+	width: 80%;
+	/* min-width: 1183px; */
+	height: 113px;
+	background: url(../images/SINCE.png) no-repeat center center;
+	background-size: 80% 100%;
+	margin-top: 45px;
+	margin: 0 auto;
+   }
+   .M-cont-ulist{
+   	width: 100%;
+   	margin-top: 65px;
+   	background: #fff;
+   	height: 707px;
+   }
+   .M-cont-Ul{
+   	display: block;
+   	width: 100%;
+   	margin-top:45px;
+   	background: #fff;
+   }
+   .M-cont-Ul li{
+   	width: 80%;
+	height: 80%;
+	margin: 100px auto;
+   }
+   .M-cont-Ul li:nth-child(2)::after{
+   	display: none;
+   }
+   .M-cont-Ul li:nth-child(3)::after{
+   	display: none;
+   }
+   .M-cont-Ul li:nth-child(2)::before{
+   	display: none;
+   }
+   .M-cont-Ul li:nth-child(3)::before{
+	display: none;
+   }
+   .address{
+   	display: block;
+	font-size: 20px;
+	text-align: center;
+	margin-top: 5px;
+	color: red;
+   }
+   #allMap{
+	   display: none;
+	   
+   }
+}
