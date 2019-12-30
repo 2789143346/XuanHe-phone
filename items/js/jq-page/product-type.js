@@ -39,12 +39,8 @@
 							'<a href="javascript:;">'+item["product-detail"]+'</a>'+
 						'</p>'+
 						'<div class="go-product">'+
-							'<a href="./product-detail.html">MORE</a><span class="carte-right"></span>'+
-								
+							'<a href="'+item["a_link"]+'">MORE<span class="carte-right"></span></a>'+
 						'</div>	'+	
-							
-							
-						
 					'</figcaption>'+
 				'</li>').appendTo(".product-list ul")
 				

@@ -184,7 +184,7 @@
 	})
 	
 	function wheelFn(e){
-		console.log(1)
+		// console.log(1)
 		var now=new Date()
 		var e=e||window.event
 		if(now-them>500){
@@ -420,7 +420,7 @@ $(".one-a").on("touchstart", function(e) {
 						    startY = e.originalEvent.changedTouches[0].pageY;
 							// console.log(startX,startY)
 						});
-						$("six-a").on("touchend", function(e) {			
+						$(".six-a").on("touchend", function(e) {			
 						    // 判断默认行为是否可以被禁用
 						    if (e.cancelable) {
 						        // 判断默认行为是否已经被禁用

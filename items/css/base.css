@@ -313,7 +313,7 @@ footer{
 	.footer_right .img{
 		margin-top: 36px;
 		text-align: center;
-		display: flex;
+		/* display: flex; */
 		flex-wrap: wrap;
 		justify-content: center;
 		margin-left: 60px;
@@ -360,14 +360,11 @@ footer{
 	}
 	
 }
-@media screen and (max-width:768px){
+@media screen and (max-width:767px){
 	.zc-box-top{
 		display: block;
 		position: fixed;
 		top: 0;
-		left:0;
-		z-index:100;
-		-webkit-transform:translateZ(100px);
 	}
 	.xx-box-lists{
 		display: none;
@@ -557,5 +554,8 @@ footer{
 	}
 	.footer_left .txt{
 		margin-bottom: 20px;
+	}
+	.zc-box-top{
+		z-index: 10000;
 	}
 }

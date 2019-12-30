@@ -4,7 +4,7 @@ $(function(){
 		url: "../data/news.json",
 		async: true,
 		success: function(data) {
-			console.log(data)
+			// console.log(data)
 			data.CooperativPartner.forEach(function(item,index){
 				// console.log(item)
 				$('<li class="list-uLi" index='+index+' data="true">'+
@@ -45,20 +45,20 @@ $(function(){
 			})
 			$('.text').each(function(item){
 				var oHeight = $(this).height()
-				console.log(oHeight)
+				// console.log(oHeight)
 				if((oHeight/20)>3){
 					$(this).addClass('texter')
 				}
 			})
 		}
 	})
-	if(screen.width<768){
-		$(document).on('touchstart','.floor-ul-btn a',function(e){
-			window.location.href = "../pages/details.html";
-		})
-	}else{
-		$(document).on('click','.floor-ul-btn a',function(e){
-			window.location.href = "../pages/details.html";
-		})
-	}
+	// if(screen.width<768){
+	// 	$(document).on('touchstart','.floor-ul-btn a',function(e){
+	// 		window.location.href = "../pages/details.html";
+	// 	})
+	// }else{
+	// 	$(document).on('click','.floor-ul-btn a',function(e){
+	// 		window.location.href = "../pages/details.html";
+	// 	})
+	// }
 })

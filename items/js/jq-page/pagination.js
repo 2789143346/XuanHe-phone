@@ -41,7 +41,7 @@ var pagination = pagination || {};
             $(that._wrapid).on('click','.pagenum',function(){
                 that._currentPage = parseInt($(this).text());
                 that._cb(that._currentPage);
-				console.log( that._currentPage)
+				// console.log( that._currentPage)
                 isshowMore.call(that);
             });
 			

@@ -9,7 +9,7 @@ $(function(){
 			scrollTop:0
 		})
 	})
-	$(".list").click(function(){
+	$(".list").click(function(e){
 		if($(this).hasClass('list1')){
 			$(this).removeClass('list1').addClass('list2')
 		}else{
@@ -21,5 +21,9 @@ $(function(){
 			$('.zc-menu').addClass('zc-menu1')
 		}
 	})
+	function prevent (e) {
+　　		e.preventDefault();
+	}
+	$('.zc-menu').on('touchmove', prevent);
 })
 

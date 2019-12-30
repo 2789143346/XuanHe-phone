@@ -1,10 +1,10 @@
 $(function(){
 		
 	
-	var  attr=["all","latex","noopsyche","health","non-woven"];
+	var  attr=["latex"];
 	//初始化数据
 	getdata(attr[0],function(res){
-		
+		// console.log(res)
 		var  num=0;//计算多少条数据；
 		//清空数据容器
 		$(".product-list ul").html("")
@@ -13,10 +13,10 @@ $(function(){
 		$('.page-body-title').css({"background":'url('+res.bg+') center no-repeat'})
 		
 		res.list.forEach(function(item,index){
-			if(index<4){
+			// if(index<4){
 				num++;
 				addData(item)
-			}
+			// }
 		})
 		// $(".product-list").css({width:num/4*1040+"px"})
 
